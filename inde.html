@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>asdfdsf</title>
+</head>
+<body>
+
+	<input type="text"  id="num">
+	<input type="text"  id="num2">
+
+	<button type="button" onclick="getfun()">submit</button>
+	<br>
+	add:<div id="add"></div>
+	sub:<div id="sub"></div>
+	Mul:<div id="mul"></div>
+	div:<div id="divi"></div>
+
+
+	<script type="text/javascript">
+		 function getfun(){
+		 var a = document.getElementById("num").value;
+		 var b = document.getElementById("num2").value;
+		 const c = parseInt(a) + parseInt(b) ;
+		 const d = parseInt(a) - parseInt(b);
+		 const e = parseInt(a) * parseInt(b);
+		 const f = parseInt(a) / parseInt(b);
+
+		 		 document.getElementById("add").innerHTML = c;
+		 		 document.getElementById("sub").innerHTML = d;
+		 		 document.getElementById("mul").innerHTML = e;
+		 		 document.getElementById("divi").innerHTML = f;
+		 }
+		// const variableone = "abish"
+		// // variableone = 'choles'
+		// console.log(variableone)
+
+
+		const a1 = [1,2,3]
+		const a2 = [4,5,6]
+		const a3 = [7,8,9]
+
+		const arr = ['a','d','d','d','c','b']
+
+		// for(var i=0;i<arr.length;i++)
+		// {
+		// 	console.log(arr[i]);
+		// }
+		
+		arr.forEach((v,i)=>{
+			arr.push("hello")
+		})
+
+		// console.log(arr)
+	</script>
+</body>
+</html>
